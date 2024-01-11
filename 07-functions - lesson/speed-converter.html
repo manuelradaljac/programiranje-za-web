@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function convertToKmh(mph) {
+        return mph * 1.60934;
+      }
+
+      function convertToMph(kmh) {
+        return kmh / 1.6093440006147;
+      }
+
+      function convertSpeed(currentSpeed, unit) {
+        if (unit === 'km/h') {
+          const result = convertToKmh(currentSpeed);
+          return `${result} km/h`;
+        } else if (unit === 'mph') {
+          const result = convertToMph(currentSpeed);
+          return `${result} mph`;
+        }
+      }
+
+      console.log(convertSpeed(30, 'km/h'));
+      console.log(convertSpeed(105, 'mph'));
+    </script>
+</body>
+</html>
