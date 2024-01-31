@@ -6,26 +6,28 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="changeSkinColor()">DEBELO CIGANCE CRNO DAJ DINAR ZA SRĐANA</button>
+    <button onclick="changeSkinColor()">aJ KLIKNI AKO SMIS AAA</button>
     <script>
-      const product = {
+      const products = [
+      {
+        name: "Manuel Radaljac",
+        color: "WHT",
+        colorHex: "#FFF",
+        hair: "baldo",
+        stronk: 10000
+      },
+      {
         name: "Marin Šuman",
         color: "BLK",
+        colorHex: "#000",
         hair: "bushy wushy",
         stronk: 100
-      };
-
-      function changeSkinColor(params) {
-        const colore = product.color === "BLK" ? product.color = "aryan :)" : product.color = "still blk"
-        console.warn(product.color)
-        console.log(product)
       }
+      ]
 
-      console.log(JSON.stringify(product))
-
-      const jsonString = JSON.stringify(product)
-
-      console.log(JSON.parse(jsonString))
+      products.map((item) => (
+        console.log(item.name,":", item.hair)
+      ))
     </script>
   </body>
 </html>

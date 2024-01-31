@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const model1 = {
+        name: "hp g1",
+        price: 1100,
+        ram: "8gb",
+      };
+      const model2 = {
+        name: "lenovo",
+        price: 1250,
+        ram: "16gb",
+      };
+      const model3 = {
+        name: "asus rog",
+        price: 1500,
+        ram: "16gb",
+      };
+
+      const laptops = [model1, model2, model3];
+
+      laptops.map((laptop) =>
+        console.log(
+          "price: " + laptop.name,
+          "price: " + laptop.price,
+          "ram: " + laptop.ram
+        )
+      );
+
+      function printDetails(laptop) {
+        console.log(`Model1 specs: ${laptop.name}, price: ${laptop.price}, ram: ${laptop.ram}`)
+      }
+
+      printDetails(model1)
+      printDetails(model2)
+      printDetails(model3)
+    </script>
+  </body>
+</html>
