@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Module</title>
+  </head>
+  <body>
+    <script>
+      function changeTitle() {
+        document.title = "Manjato cigan";
+      }
+      function printBodyInConsole() {
+        console.log(document.body);
+      }
+      function changeBody() {
+        document.body.innerHTML = 
+        `
+        <h1>Marin Šumar</h1>
+        <img src="https://hns.family/files/images_comet/Person/397392_3d857f93-9aeb-450f-b64a-c798f5b21a5a.jpg"></img>
+        `;
+      }
+    </script>
+    <button onclick="changeTitle()">Change title</button>
+    <button onclick="printBodyInConsole()">Print body</button>
+    <button onclick="changeBody()">Change body</button>
+    <p id="paragraf" style="font-size: 15em;"></p>
+  </body>
+</html>
