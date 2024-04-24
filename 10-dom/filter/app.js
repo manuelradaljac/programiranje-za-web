@@ -1,3 +1,4 @@
 function selectFilter(btn) {
-    btn.classList.toggle("filter-button-selected");
+    document.querySelector(".mjmne").innerHTML = btn.innerHTML;
+    btn.classList.toggle("filter-button-selected");   
 }
