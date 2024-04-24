@@ -1,0 +1,15 @@
+.filter-button {
+  background-color: #707cff;
+  border: 1px solid #f8f9fa;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.filter-button-selected {
+  opacity: 0.1;
+}

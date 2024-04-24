@@ -1,0 +1,9 @@
+.int-div {
+    background-color: #ff0703;
+    height: 600px;
+    width: 600px;
+}
+
+.int-div-mouse-over{
+    background-color: rgb(638, 655, 0);
+}
