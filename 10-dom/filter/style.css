@@ -1,6 +1,5 @@
 .filter-button {
   background-color: #707cff;
-  border: 1px solid #f8f9fa;
   color: #ffffff;
   padding: 10px 20px;
   margin: 5px;
@@ -8,8 +7,16 @@
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s;
+  border-style: none;
+  outline: none;
+  border-color: transparent;
 }
 
-.filter-button-selected {
-  opacity: 0.1;
+.filter-button-clicked {
+  background-color: orange !important;
+}
+
+html {
+  background-color: rgb(36, 36, 36);
+
 }

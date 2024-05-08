@@ -1,31 +1,16 @@
-function selectFilter(btn) {
-    document.querySelector(".mjmne").innerHTML = btn.innerHTML;
-    btn.classList.toggle("filter-button-selected");
-}
-
-function onIphoneClicked() {
-    const btn = document.querySelector(".iphone-btn")
-    if (btn.classList.contains("filter-btn-clicked") === false) {
-        btn.classList.add("filter-btn-clicked")
+let selectedBtn = ''
+function onPhoneClicked(phoneName) {
+    const btn = document.querySelector(`.${phoneName}`)
+    if (btn.classList.contains("filter-button-clicked") === false) {
+        if (selectedBtn !== '') {
+            const oldBtn = document.querySelector(`.${selectedBtn}`)
+            oldBtn.classList.remove("filter-button-clicked")
+        }
+        btn.classList.add("filter-button-clicked")
+        selectedBtn = phoneName
     } else {
-        btn.classList.remove("filter-btn-clicked")
+        btn.classList.remove("filter-button-clicked")
     }
 }
 
-function onSamsungClicked() {
-    const btn = document.querySelector(".samsung-btn")
-    if (btn.classList.contains("filter-btn-clicked") === false) {
-        btn.classList.add("filter-btn-clicked")
-    } else {
-        btn.classList.remove("filter-btn-clicked")
-    }
-}
 
-function onXiaomiClicked() {
-    const btn = document.querySelector(".xiaomi-btn")
-    if (btn.classList.contains("filter-btn-clicked") === false) {
-        btn.classList.add("filter-btn-clicked")
-    } else {
-        btn.classList.remove("filter-btn-clicked")
-    }
-}
