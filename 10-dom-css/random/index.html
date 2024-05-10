@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>Random</title>
 </head>
 <body>
-    <label for="prvi">prvi broj</label>
-    <input type="text" name="prvi" id="prvi">
-    <label for="drugi">drugi broj</label>
-    <input type="text" name="drugi" id="drugi">
+    <label for="first">prvi broj</label>
+    <input type="text" name="first" class="first">
+    <label for="second">drugi broj</label>
+    <input type="text" name="second" class="second">
+    <p class="warning-p"></p>
     <button onclick="generateRandom()">generiraj</button>
+    <p class="generated-number"></p>
 </body>
 </html>

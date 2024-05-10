@@ -1,0 +1,11 @@
+html {
+    font-family: system-ui;
+}
+.warning-p{
+    color: red;
+}
+
+.generated-number {
+    font-size: 3em;
+    font-weight: bold;
+}
